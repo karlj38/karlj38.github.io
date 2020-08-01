@@ -3,10 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karl Jones</title>
+    <title>Karl Jones Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ea0551367f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <a href="/freecodecamp-Landing-Page">Landing Page</a>
+    <header>
+      <nav id="navbar" class="flex">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="welcome-section">
+        <div>
+          <h1>
+            Hi, I'm Karl!<br />
+            I like to <span>build websites</span> <br />
+            and eat pizza.
+          </h1>
+          <p>
+            <a id="" href="#" target="blank"
+              ><i class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a
+              id="profile-link"
+              href="https://www.freecodecamp.org/fcc431da470"
+              target="_blank"
+              ><i class="fab fa-free-code-camp fa-2x"></i
+            ></a>
+            <a id="" href="https://github.com/karlj38" target="blank"
+              ><i class="fab fa-github-square fa-2x"></i
+            ></a>
+            <a id="" href="#" target="blank"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </p>
+        </div>
+        <img id="karl" src="img/karl.svg" alt="Karl Bitmoji" />
+      </section>
+      <section id="projects">
+        <div class="grid">
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <figure class="front">
+                <img
+                  id="portfolio"
+                  src="img/portfolio.png"
+                  alt="portfolio img"
+                />
+              </figure>
+              <figure class="back">
+                <img src="img/portfolio m.png" alt="portfolio mobile img" />
+              </figure>
+            </div>
+          </div>
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <div class="front">
+                <img
+                  id="stemtuition"
+                  src="img/STEM Tuition.png"
+                  alt="STEM Tuition img"
+                />
+              </div>
+              <div class="back">
+                <img
+                  src="img/STEM Tuition m.png"
+                  alt="STEM Tuition mobile img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <div class="front">
+                <img id="tindog" src="img/tindog.png" alt="Tindog img" />
+              </div>
+              <div class="back">
+                <img src="img/tindog m.png" alt="Tindog mobile img" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <div class="front">
+                <img id="techdoc" src="img/tech doc.png" alt="Tech Doc img" />
+              </div>
+              <div class="back">
+                <img src="img/tech doc m.png" alt="Tech Doc mobile img" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <div class="front">
+                <img
+                  id="survey"
+                  src="img/survey form.png"
+                  alt="Survey form img"
+                />
+              </div>
+              <div class="back">
+                <img src="img/survey form m.png" alt="Survey form mobile img" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card project-tile">
+            <div class="flip-card-inner">
+              <div class="front">
+                <img
+                  id="tribute"
+                  src="img/tribute page.png"
+                  alt="Tribute page img"
+                />
+              </div>
+              <div class="back">
+                <img src="img/tribute page m.png" alt="Tribute mobile img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h2>Let's work together!</h2>
+          <p>
+            <a id="" href="#" target="blank"
+              ><i class="fab fa-facebook-f fa-3x"></i
+            ></a>
+            <a
+              id="profile-link"
+              href="https://www.freecodecamp.org/fcc431da470"
+              target="_blank"
+              ><i class="fab fa-free-code-camp fa-3x"></i
+            ></a>
+            <a id="" href="https://github.com/karlj38" target="blank"
+              ><i class="fab fa-github-square fa-3x"></i
+            ></a>
+            <a id="" href="#" target="blank"
+              ><i class="fab fa-twitter fa-3x"></i
+            ></a>
+          </p>
+        </div>
+
+        <!-- <form action="">
+          <h2>Let's work together!</h2>
+          <br />
+          <br />
+          <input type="text" name="name" id="name" placeholder="Your name:" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email:"
+          /> -->
+        <!-- <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Please enter your comments and queries:"
+          ></textarea> 
+          <button type="submit">Let's Go!</button>
+        </form> -->
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2020 Karl Jones</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 </html>
