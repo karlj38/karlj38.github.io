@@ -115,7 +115,7 @@ i:first-of-type {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: repeat(3, auto);
   justify-content: center;
   gap: 20px;
@@ -124,13 +124,13 @@ i:first-of-type {
 }
 
 .project-tile img {
-  width: 250px;
-  height: 250px;
+  max-width: 400px;
+  max-height: 400px;
   margin: auto;
 }
 
 .flip-card {
-  height: 300px;
+  height: 450px;
   perspective: 1000px;
 }
 
@@ -172,7 +172,7 @@ i:first-of-type {
   justify-items: center;
 }
 
-form {
+/* form {
   border: 1px solid #c51f5d;
   border-radius: 5px;
   padding: 50px;
@@ -190,7 +190,7 @@ form button {
   border-radius: 5px;
   color: white;
   font-size: 1.4rem;
-}
+} */
 
 footer {
   background-color: #c51f5d;
@@ -202,16 +202,19 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
+  /* header {
     height: 10vh;
-  }
+  } */
+
   nav {
     justify-content: center;
     margin-right: 0;
   }
+
   #welcome-section {
     padding-top: 15vh;
   }
+
   h1 {
     width: auto;
   }
@@ -221,9 +224,19 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1378px) {
+  #projects div a:last-child {
+    grid-column-start: 2;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     max-width: 1600px;
+  }
+
+  #projects div a:last-child {
+    grid-column-start: 2;
   }
 }
