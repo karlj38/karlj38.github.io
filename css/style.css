@@ -224,11 +224,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1378px) {
+/* @media only screen and (min-width: 1378px) {
   #projects div a:last-child {
     grid-column-start: 2;
   }
-}
+} */
 
 @media only screen and (min-width: 1700px) {
   .grid {
@@ -236,7 +236,7 @@ footer {
     max-width: 1600px;
   }
 
-  #projects div a:last-child {
+  /* #projects div a:last-child {
     grid-column-start: 2;
-  }
+  } */
 }
